@@ -39,8 +39,8 @@ O código é dividido em 7 arquivos, sendo eles:
 |  Arquivo                        |   Função                                                                                          |
 | ------------------------------- | ------------------------------------------------------------------------------------------------- |
 |  `main.c`                       | Arquivo principal para iniciar o algoritimo.                                                      |
-|  `lab.h`                        | Contém as funções responsáveis pelos métodos de busca, além de conter a função que realiza a leitura da matriz do arquivo            |
-|  `lab.c`                        | Formatação das funções declaradas no arquivo lab.h.                                               |
+|  `lab.h`                        | Define as funções de busca e de leitura de arquivo do programa.         |
+|  `lab.c`                        | Contém as funções responsáveis pelos métodos de busca, além de conter a função que realiza a leitura da matriz do arquivo                                               |
 |  `queue.h`                      | Define as funções para se trabalhar com a fila.                                                   |
 |  `queue.c`                      | Formatação das funções declaradas na queue.h.                                                     |
 |  `stack.h`                      | Define as funções para se trabalhar com a pilha.                                                  |
@@ -52,12 +52,12 @@ As funções mais importantes utilizadas são:
 |  Função                                                       |  Funcionalidade                                                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 |  `LerMatriz` - [`lab.c`, linhas 6 a 74]                       | Realiza a leitura do arquivo, salvando a matriz utilizada e chamando as funções de caminhamento;  |
-|  `Caminho` - [`lab.c`, linhas 76 a 223]                       | Realiza o caminhamento Randomico;                                                                 |
-|  `DFS` - [`lab.c`, linhas 225 a 312]                          | Realiza o caminhamento em Profundidade;                                                           |
-|  `BFS` - [`lab.c`, linhas 335 a 994]                          | Realiza o caminhamento em Largura;                                                                |
+|  `Caminho` - [`lab.c`, linhas 76 a 223]                       | Realiza a busca de forma Randomica;                                                                 |
+|  `DFS` - [`lab.c`, linhas 225 a 312]                          | Realiza a busca em Profundidade;                                                           |
+|  `BFS` - [`lab.c`, linhas 335 a 994]                          | Realiza a busca em Largura;                                                                |
 
 <p align="justify">
-As funções utilizadas dos arquivos <i>queue.h<i>/<i>stack.h<i> e <i>queue.c<i>/<i>stack.c<i> são apenas para auxiliar na lógica de movimentação implementada. 
+As funções utilizadas dos arquivos <i>queue.h<i>/<i>stack.h<i> e <i>queue.c<i>/<i>stack.c<i> são responsáveis pela inserção e remoção de componentes na fila e na pilha. Além de conter funções auxiliares que facilitam o desenvolvimento da lógica do programa.
 
 <p> </p>
 
@@ -66,7 +66,7 @@ As funções utilizadas dos arquivos <i>queue.h<i>/<i>stack.h<i> e <i>queue.c<i>
 # Fila (queue) e Pilha (stack)
 
 <p align="justify">
-As fila e pilha utilizadas no trabalho foram utilizadas para auxiliar na forma de caminhamento da matriz, a utilização delas é mais especificadas na lógica implementada.
+A fila e a pilha foram utilizadas nas buscas em largura e em profundidade respectivamente. Suas funções serão especificadas ao longo da explicação das logicas de busca.
 
 <p align="justify">
 Mas segue um quadro para explicar rapidamente como funcionam as funções implementadas relacionadas a fila e a pilha:
@@ -101,7 +101,22 @@ Mas segue um quadro para explicar rapidamente como funcionam as funções implem
 A função responsável pela busca randômica é a função Caminho(), a lógica usada para desenvolve-la foi basicamente a mesma usada no trabalho do Labirinto Recorrente. Durante a trajetoria dependendo da posição atual são gerado numeros entre -1 e 1 usando a função rand() para as variaveis path_linha e path_coluna. Esses valores gerados são incrementados nas variaveis posicao_linha e posicao_coluna e realizando o caminho, por exemplo, se a posição atual for posicao_linha = 2 e posicao_coluna = 1, e for gerado 0 e 1 nas variaveis path_linha e path_coluna, a posição nova será posicao_linha = 2 e posicao_coluna = 2, ou seja ele caminhou para direita. Existem casos em que não se pode gerar números nesse intervalo, por exemplo se a posição atual for na primeira linha, não pode gerar -1 na variável path_linha, já que não existe uma linha a cima da primeira, nesses casos existem tratamentos únicos para cada caso em particular.
 
 <p align="justify">
-O função irá executar até encontrar o carácter "?", caso não for encontrado o programa irá parar e mostrar que não é possível encontrar o ponto de parada. 
+O função irá executar até encontrar o caractere "?", caso não for encontrado o programa irá parar e mostrar que não é possível encontra-lo. Além disso como foi dito, caso o algoritmo se depare com o caractere "*", ele irá retornar para a posição inicial e a posiçao que era "*" irá passar a ser "1". Em casos onde o ponto de parada não pode ser encontrado é usado um contador de casas percorridas que contém o caractere "0" e um contador de casas percorridas que contém o caractere "1", caso o numero de casas contendo "0" for igual ao número de casas contendo "1" vezes o tamanho da matriz ao quadrado, o programa se encerra. Fazendo isso o algorítmo irá ficar rodando por um bom tempo, essa condição irá assegurar que o programa percorreu todas as casas válidas, caso encontre o ponto de parada, o programa para, caso cotrário só irá parar qundo o número de casas percorridas contendo "0" for tão grande a ponto dele ter caminhado em todas as posições válidas.
+
+<p align="justify">
+De qualquer maneira ao final é mostrado no terminal o resultado da matriz com as casas visitadas, o tempo de execução e a quantidade total de passos.
+
+<p align="justify">
+Exemplo de saída da busca Randômica:
+ 
+<p align="center">
+<img src="imagens/SaidaRadom">
+<p> </p>
+ 
+
+ 
+
+ 
 
 
 # DFS
