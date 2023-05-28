@@ -332,3 +332,7 @@ Esse pequeno exemplo possui um arquivo Makefile que realiza todo o procedimento 
 <a style="color:black" href="mailto:jmarconiadm@outlook.com?subject=[GitHub]%20Source%20Dynamic%20Lists">
 ✉️ <i>jmarconiadm@outlook.com</i>
 </a>
+  
+<a style="color:black" href="mailto:lucasfba13@gmail.com?subject=[GitHub]%20Source%20Dynamic%20Lists">
+✉️ <i>jmarconiadm@outlook.com</i>
+</a>
