@@ -10,10 +10,10 @@
 <p> </p>
 
 <p align="justify">
-Componentes: José Marconi de Almeida Júnior, Lucas Fernandes Barbosa de Andrade.
+Alunos: José Marconi de Almeida Júnior, Lucas Fernandes Barbosa de Andrade.
 
 <p align="justify">
-A atividade se trata de se ler uma matriz, quadrática, de um arquivo, que será o labirinto. Ele deve ser percorrido de 3 formas diferentes: Randomicamente, por Profundidade(DFS) e por Largura(BFS). A matriz sera composta pelos seguintes caracteres:
+O trabalho se trata de percorrer uma amtriz quadrática lida de um arquivo em busca de um determinado ponto de parada. Ele deve ser percorrido usando 3 tipos diferentes de busca: Randomicamente, em Profundidade(DFS) e em Largura(BFS). A matriz sera composta pelos seguintes caracteres:
 
 |          Caractere            | Função                                                                                                                                                    |
 | ------------------------------| --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -98,13 +98,19 @@ Mas segue um quadro para explicar rapidamente como funcionam as funções implem
 
 # Random
 <p align="justify">
-A função responsável pela busca randômica é a função Caminho(), a lógica usada para desenvolve-la foi basicamente a mesma usada no trabalho do Labirinto Recorrente. Durante a trajetoria dependendo da posição atual são gerado numeros entre -1 e 1 usando a função rand() para as variaveis path_linha e path_coluna. Esses valores gerados são incrementados nas variaveis posicao_linha e posicao_coluna e realizando o caminho, por exemplo, se a posição atual for posicao_linha = 2 e posicao_coluna = 1, e for gerado 0 e 1 nas variaveis path_linha e path_coluna, a posição nova será posicao_linha = 2 e posicao_coluna = 2, ou seja ele caminhou para direita. Existem casos em que não se pode gerar números nesse intervalo, por exemplo se a posição atual for na primeira linha, não pode gerar -1 na variável path_linha, já que não existe uma linha a cima da primeira, nesses casos existem tratamentos únicos para cada caso em particular. 
+A função responsável pela busca randômica é a função Caminho(), a lógica usada para desenvolve-la foi basicamente a mesma usada no trabalho do Labirinto Recorrente. Durante a trajetoria dependendo da posição atual são gerado numeros entre -1 e 1 usando a função rand() para as variaveis path_linha e path_coluna. Esses valores gerados são incrementados nas variaveis posicao_linha e posicao_coluna e realizando o caminho, por exemplo, se a posição atual for posicao_linha = 2 e posicao_coluna = 1, e for gerado 0 e 1 nas variaveis path_linha e path_coluna, a posição nova será posicao_linha = 2 e posicao_coluna = 2, ou seja ele caminhou para direita. Existem casos em que não se pode gerar números nesse intervalo, por exemplo se a posição atual for na primeira linha, não pode gerar -1 na variável path_linha, já que não existe uma linha a cima da primeira, nesses casos existem tratamentos únicos para cada caso em particular.
+
+<p align="justify">
+O função irá executar até encontrar o carácter "?", caso não for encontrado o programa irá parar e mostrar que não é possível encontrar o ponto de parada. 
+
 
 # DFS
 <p align="justify">
 
 # BFS
 <p align="justify">
+A busca em largura é um algoritmo utilizado para percorrer ou buscar itens dentro das estruturas de dados grafos, árvores ou em matrizes como foi o caso desse trabalho. A busca em largura pode ser implementada de várias formas. As mais utilizadas são através de recursão, que utiliza pilha (LIFO), ou iterativamente, através de uma fila (FIFO), que será o caso desse trabalho.
+ 
 A lógica implementada no encaminhamento em largura (BFS), foi utilizando uma espécie de "radar". 
 
 <p align="justify">
