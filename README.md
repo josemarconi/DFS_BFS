@@ -127,9 +127,9 @@ Exemplo em imagens do comportamento do <i>player<i> e a utilização do "radar":
  
 <div style="display: inline_block"><br>
   
-  <img align="center" height="400px" width="400px" src="Imagens/Ex1.png"/>    
-  <img align="center" height="400px" width="400px" src="Imagens/Ex2.png"/>    
-  <img align="center" height="400px" width="400px" src="Imagens/Ex3.png"/>
+  <img align="center" height="400px" width="400px" src="imagens/Ex1.png"/>    
+  <img align="center" height="400px" width="400px" src="imagens/Ex2.png"/>    
+  <img align="center" height="400px" width="400px" src="imagens/Ex3.png"/>
 
 </a>
 </div>
@@ -142,7 +142,7 @@ Exemplo em imagens do comportamento do <i>player<i> e a utilização do "radar":
 Exemplo de saída do BFS:
 
 <p align="center">
-<img height="600px" width="600px" src="Imagens/Exsaida1.png"/>
+<img height="600px" width="600px" src="imagens/Exsaida1.png"/>
 
 <p> </p>
 
@@ -157,7 +157,7 @@ Os testes foram feitos rodando o programa 10 vezes, guardando os valores dos pas
 A primeira bateria de testes foi realizado na seguinte matriz:
 
 <p align="center">
-<img height="600px" width="600px" src="Imagens/ExTeste1.png"/>
+<img height="600px" width="600px" src="imagens/ExTeste1.png"/>
 
 É uma matriz que em que não é possível chegar ao <i>?<i>, logo, de certa forma, eles caminham por toda a matriz até um critério de parada. Nesta matriz, até os critérios de parada conseguimos os seguintes valores:
 
@@ -175,7 +175,7 @@ A primeira bateria de testes foi realizado na seguinte matriz:
 A segunda bateria de testes foi realizado na seguinte matriz:
 
 <p align="center">
-<img height="600px" width="600px" src="Imagens/ExTeste2.png"/>
+<img height="600px" width="600px" src="imagens/ExTeste2.png"/>
 
 É uma matriz que em que é possível chegar ao <i>?<i>, e se encontra na última posição da matriz([49][49]):
 
@@ -193,7 +193,7 @@ A segunda bateria de testes foi realizado na seguinte matriz:
 A terceira bateria de testes foi realizado na seguinte matriz:
 
 <p align="center">
-<img height="600px" width="600px" src="Imagens/ExTeste3.png"/>
+<img height="600px" width="600px" src="imagens/ExTeste3.png"/>
 
 É uma matriz que em que é possível chegar ao <i>?<i>, e se encontra na posição <i>[0][49]<i>:
 
@@ -211,7 +211,7 @@ A terceira bateria de testes foi realizado na seguinte matriz:
 A quarta bateria de testes foi realizado na seguinte matriz:
 
 <p align="center">
-<img height="600px" width="600px" src="Imagens/ExTeste4.png"/>
+<img height="600px" width="600px" src="imagens/ExTeste4.png"/>
 
 É uma matriz que em que é possível chegar ao <i>?<i>, e se encontra na posição <i>[49][0]<i>:
 
@@ -229,7 +229,7 @@ A quarta bateria de testes foi realizado na seguinte matriz:
 A quinta bateria de testes foi realizado na seguinte matriz:
 
 <p align="center">
-<img height="600px" width="600px" src="Imagens/ExTeste5.png"/>
+<img height="600px" width="600px" src="imagens/ExTeste5.png"/>
 
 É uma matriz que em que é possível chegar ao <i>?<i>, e se encontra na posição <i>[5][7]<i>:
 
