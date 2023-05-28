@@ -13,17 +13,17 @@
 Alunos: José Marconi de Almeida Júnior, Lucas Fernandes Barbosa de Andrade.
 
 <p align="justify">
-O trabalho se trata de percorrer uma amtriz quadrática lida de um arquivo em busca de um determinado ponto de parada. Ele deve ser percorrido usando 3 tipos diferentes de busca: Randomicamente, em Profundidade(DFS) e em Largura(BFS). A matriz sera composta pelos seguintes caracteres:
+O trabalho se trata de percorrer uma matriz quadrática lida de um arquivo em busca de um determinado ponto de parada. Ela deve ser percorrida usando 3 tipos diferentes de busca: Randomicamente, lógica essa já implementada no trabalho anterior, busca em Profundidade(DFS) e em Largura(BFS). A matriz sera composta pelos seguintes caracteres:
 
 |          Caractere            | Função                                                                                                                                                    |
 | ------------------------------| --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |  `#`                          | Parede, o <i>player</i> não pode andar para as posições com esse caractere.                                                                               |
 |  `*`                          | Perigo, quando adentrar a uma casa com esse caractere, o caminhamento é resetado para a posição inicial nas 3 formas sendo iniciado novamente totalmente do zero e o caractere é trocado para `1`.                                                                                                                                                                                        |
 |  `1`                          | São as casas que podem ser percorridas normalmente.                                                                                                       |
-|  `?`                          | Ponto de parada, quando o <i>player</i> cair nessa casa, ele sai do labirinto e o programa passa para a próxima forma de caminhamento ou até encontrar nos 3 casos e finalizar os labirintos.                                                                                                                                                            |
+|  `?`                          | Ponto de parada, quando o <i>player</i> cair nessa casa, ele sai da matriz e o programa encerra.                                                                                                                                                      |
 
 <p align="justify">
-A matriz utilizada será a mesma para as 3 formas diferentes de percorrer e seus caracteres devem ser alocados de maneira totalmente aleatória. Além do mais, é necessário uma comparação entre os 3 algoritimos de caminhamento, mostrando o número de passos dados e tempo de execução para finalização da matriz.  
+A matriz utilizada será a mesma para as 3 formas diferentes de busca e seus caracteres devem ser alocados de maneira totalmente aleatória. Além do mais, é necessário uma comparação entre os 3 algoritimos de caminhamento, mostrando o número de passos dados e tempo de execução para finalização da busca.  
 
 <p align="justify">
 
@@ -39,7 +39,7 @@ O código é dividido em 7 arquivos, sendo eles:
 |  Arquivo                        |   Função                                                                                          |
 | ------------------------------- | ------------------------------------------------------------------------------------------------- |
 |  `main.c`                       | Arquivo principal para iniciar o algoritimo.                                                      |
-|  `lab.h`                        | Define as funções para tratamento da matrizes e arquivo, e as funções de caminhamento.            |
+|  `lab.h`                        | Contém as funções responsáveis pelos métodos de busca, além de conter a função que realiza a leitura da matriz do arquivo            |
 |  `lab.c`                        | Formatação das funções declaradas no arquivo lab.h.                                               |
 |  `queue.h`                      | Define as funções para se trabalhar com a fila.                                                   |
 |  `queue.c`                      | Formatação das funções declaradas na queue.h.                                                     |
@@ -73,7 +73,7 @@ Mas segue um quadro para explicar rapidamente como funcionam as funções implem
 
 |  Função                         |   Funcionalidade                                                                                  |
 | ------------------------------- | ------------------------------------------------------------------------------------------------- |
-|  `FFvzia` e `FPvzia`            | Utilizadas para inciar as fila e pilha e alocar os ponteiros no topo e na base.                   |
+|  `FFvzia` e `FPvzia`            | Utilizadas para inicializar a fila e pilha e alocar os ponteiros no topo e na base.                   |
 |  `isVaziaQueue` e `isVaziaStack`| Retorna um booleano como true, caso a fila ou pilha esteja vazia.                                 |
 |  `Enfileira` e `Push`           | Salva os valores na fila e na pilha.                                                              |
 |  `Desenfileira` e `Pop`         | No caso da fila, retira o primeiro elemento e da pilha retira o último elemento                   |
