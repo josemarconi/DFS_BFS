@@ -1,4 +1,4 @@
-# Busca em Profundidade (DFS), Largura (BFS) e Randômico
+#Busca em Profundidade (DFS), Largura (BFS) e Randômico
 
 <div style="display: inline-block;">    
 <img align="center" height="20px" width="20px" src="https://img.shields.io/badge/-C-blue"/> 
