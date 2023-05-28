@@ -127,9 +127,12 @@ A lógica utilizada para realizar a busca em profundidade neste trabalho foi rel
 <p align="justify">
 A figura acima demonstra a lógica de uma busca em profundidade
 
+<p align="justify">
+Exemplo de saída do método de busca em profundidade: 
 
-
-
+<p align="center">
+<img height="600px" width="600px" src="imagens/SaidaDFS.png"/>
+<p> </p>
 
 # BFS
 <p align="justify">
