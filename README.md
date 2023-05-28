@@ -128,7 +128,7 @@ A lógica utilizada para realizar a busca em profundidade neste trabalho foi rel
 A figura acima demonstra a lógica de uma busca em profundidade
 
 <p align="justify">
-Exemplo de saída do método de busca em profundidade: 
+Exemplo de saída do método do DFS: 
 
 <p align="center">
 <img height="600px" width="600px" src="imagens/SaidaDFS.png"/>
