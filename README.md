@@ -110,23 +110,20 @@ De qualquer maneira ao final é mostrado no terminal o resultado da matriz com a
 Exemplo de saída da busca Randômica:
  
 <p align="center">
-<img src="imagens/SaidaRadom">
+<img height="600px" width="600px" src="imagens/SaidaRandom.png"/>
 <p> </p>
- 
-
- 
-
- 
-
 
 # DFS
 <p align="justify">
+A busca em profundidade é um algoritmo utilizado para percorrer ou buscar itens dentro das estruturas de dados grafos, árvores ou em matrizes como foi o caso desse trabalho. Existem várias formas de implementar uma busca em profundidade, no caso deste trabalho foi utilizado um algoritmo iterativo e utilizando uma pilha (LIFO) para controlar as casas a serem visitadas.
+
+A lógica utilizada para realizar a busca em profundidade neste trabalho foi relativamente simples, usando apenas duas funções principais, sendo elas, DFS() e Empilhar(). A função DFS() é realizado a parte central da lógica, já a função Empilhar() serve apenas para empilhar elementos na pilha que irá controlar todo o processo de busca.  
 
 # BFS
 <p align="justify">
-A busca em largura é um algoritmo utilizado para percorrer ou buscar itens dentro das estruturas de dados grafos, árvores ou em matrizes como foi o caso desse trabalho. A busca em largura pode ser implementada de várias formas. As mais utilizadas são através de recursão, que utiliza pilha (LIFO), ou iterativamente, através de uma fila (FIFO), que será o caso desse trabalho.
+A busca em largura é um algoritmo utilizado para percorrer ou buscar itens dentro das estruturas de dados grafos, árvores ou assim como a busca em profundidade, em matrizes. A busca em largura pode ser implementada de várias formas. As mais utilizadas são através de recursão, que utiliza pilha (LIFO), ou iterativamente, através de uma fila (FIFO), que será o caso desse trabalho.
  
-A lógica implementada no encaminhamento em largura (BFS), foi utilizando uma espécie de "radar". 
+A lógica implementada na buca em largura (BFS), foi utilizando uma espécie de "radar". 
 
 <p align="justify">
 O <i>player<i> inicia sempre na posição <i>[0][0]<i> da matriz (que sempre será <i>1<i>), a partir dela, primeiro é verificado o raio do local onde ele está. Averiguando todas as posições possíveis para caminhar, levando sempre em consideração o raio da matriz, e mudando o caractere delas para <i>x<i>, mas somente se o caractere da posição for <i>1<i>, se for <i>*<i> ou <i>?<i> o caractere não trocado. Dessa forma, ele salva todas essas posições que ele pode caminhar, que são as posições diferentes de <i>#<i>, <i>x<i> e <i>0<i>. Elas são salvas em uma fila, que é utilizada para caminhar. 
