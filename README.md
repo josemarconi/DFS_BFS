@@ -127,9 +127,9 @@ Exemplo em imagens do comportamento do <i>player<i> e a utilização do "radar":
  
 <div style="display: inline_block"><br>
   
-  <img align="center" height="400px" width="400px" src="imagens/Ex1.png"/>    
-  <img align="center" height="400px" width="400px" src="imagens/Ex2.png"/>    
-  <img align="center" height="400px" width="400px" src="imagens/Ex3.png"/>
+  <img align="center" height="400px" width="400px" src="Imagens/Ex1.png"/>    
+  <img align="center" height="400px" width="400px" src="Imagens/Ex2.png"/>    
+  <img align="center" height="400px" width="400px" src="Imagens/Ex3.png"/>
 
 </a>
 </div>
