@@ -98,6 +98,7 @@ Mas segue um quadro para explicar rapidamente como funcionam as funções implem
 
 # Random
 <p align="justify">
+A função responsável pela busca randômica é a função Caminho(), a lógica usada para desenvolve-la foi basicamente a mesma usada no trabalho do Labirinto Recorrente. Durante a trajetoria dependendo da posição atual são gerado numeros entre -1 e 1 usando a função rand() para as variaveis path_linha e path_coluna. Esses valores gerados são incrementados nas variaveis posicao_linha e posicao_coluna e realizando o caminho, por exemplo, se a posição atual for posicao_linha = 2 e posicao_coluna = 1, e for gerado 0 e 1 nas variaveis path_linha e path_coluna, a posição nova será posicao_linha = 2 e posicao_coluna = 2, ou seja ele caminhou para direita. Existem casos em que não se pode gerar números nesse intervalo, por exemplo se a posição atual for na primeira linha, não pode gerar -1 na variável path_linha, já que não existe uma linha a cima da primeira, nesses casos existem tratamentos únicos para cada caso em particular. 
 
 # DFS
 <p align="justify">
