@@ -83,7 +83,7 @@ Mas segue um quadro para explicar rapidamente como funcionam as funções implem
 
 <p> </p>
 
-# Lógica Implementada
+# Lógicas Implementada
 
 |  Posições possíveis de caminhar                                                                   |
 | ------------------------------------------------------------------------------------------------- |
